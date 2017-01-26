@@ -6,6 +6,7 @@ RUN apt-get update -qqy && apt-get install -qqy \
         cmake \
         colordiff \
         unzip \
+        wget \
         zip \
         && rm -rf /var/lib/apt/lists
 
