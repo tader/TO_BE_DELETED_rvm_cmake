@@ -17,6 +17,6 @@ RUN cd /tmp \
         ; install -t /usr/bin -g root -o root -m 0755 /tmp/packer* /tmp/jq \
         ; rm -f /tmp/*.zip /tmp/packer* /tmp/jq
 
-ENV ADDITIONAL_RUBIES "2.1.0 2.2.3"
+ENV ADDITIONAL_RUBIES "2.1.0 2.2.3 2.2.5"
 RUN /bin/bash -l -c 'for version in $ADDITIONAL_RUBIES; do echo "Now installing Ruby $version"; rvm install $version; rvm cleanup sources; done'
 
